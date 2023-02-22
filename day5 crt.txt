@@ -1,0 +1,130 @@
+s = "123"
+n = int(s)/list(s)/float(s)
+print(n)
+
+
+arr=[1,2,3,1,2,3,1,2,3]
+print(set(arr))
+
+#dictionary
+abc = {
+    key : value,
+    key2: value 2,
+    key3 : value 3
+}
+
+
+example dictionary
+student ={
+"name" :"student 1",
+"age":15,
+"year":2,
+"section:"cse"
+}
+print(student)
+
+
+
+student ={}
+student.update(
+{ "name":"name 1","age":"20"}
+)
+print(student)
+
+
+print(student.keys())
+print(studnet.values())
+print(student.items())
+
+
+def fun_name(#argument list):
+    print("sample funtion")
+fun_name()
+
+
+def fun_name(num1,num2):
+    print("ans:",num1*num2)
+fun_name(10,20)
+
+
+def fun_name(num1,num2,ope):
+    if ope=="+":
+        print(num1+num2)
+    elif ope=="-":
+        print(num1-num2)
+    elif ope=="*":
+        print(num1*num2)
+fun_name(10,20,"*")
+
+#sum of elemnetns in list
+def fun_name(list):
+        
+    sum=0
+    for i in list:
+        sum=sum+i
+    print(sum)
+list=[1,2,3,4,5,6]
+fun_name(list)
+
+
+
+four types of functions 
+regular functions 
+default value funtions
+keyword argument functions 
+variable length function
+
+
+regular fubction example
+def hello(a,b,c):
+    print(a)
+    print(b)
+    print(c)
+hello(10,20,30)
+
+default value function
+def hello(a,b,c=0):
+    print(a)
+    print(b)
+    print(c)
+hello(10,20)
+
+def hello(a=90,b=60,c=0):
+    print(a)
+    print(b)
+    print(c)
+hello()
+
+
+key word argument function
+def hello(a=90,b=60,c=0):
+    print(a)
+    print(b)
+    print(c)
+hello(b=10,c=30,a=20)
+
+example2
+def hello(x,y,z):
+    print(x)
+    print(y)
+    print(z)
+hello(y=10,z=30,x=20)
+
+variable length function
+def hello(*variable):
+    print(variable)
+  
+hello(10,20,30)
+hello(10,20)
+hello(100,344,23,56,2,5)
+
+sum of vriable length funtions
+def hello(*variable):
+    sum=0
+    for i in variable:
+        sum=sum+i
+    print(sum)
+  
+hello(10,20,30)
+hello(100,200,23,41)
+hello(100,34,36)
